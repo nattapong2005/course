@@ -1,0 +1,22 @@
+@import 'https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7/fonts/LINESeedSansTH/LINESeedSansTH.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'LINE Seed Sans TH', sans-serif;
+}
+
+body {
+  background-color: #222831;
+}
+span {
+  color: #7A1CAC;
+}
+
+.card {
+  border-bottom: #7A1CAC solid 5px;
+}
