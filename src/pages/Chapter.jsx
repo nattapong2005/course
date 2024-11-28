@@ -39,12 +39,14 @@ const Chapter = () => {
         <NavLink to={"/"} ><div className="bg-white p-2 font-bold rounded-xl"><i class="fa-solid fa-arrow-left"></i> ย้อนกลับ</div></NavLink>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-10">
-        {
-          data.map((d) => (
-            <ChapterCard key={d.ch_id} title={d.ch_title} url={d.ch_url} view={d.ch_view} timetotal={d.ch_timetotal} />
-          ))
-        }
+      <div className="flex justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-10">
+          {
+            data.map((d) => (
+              <ChapterCard key={d.ch_id} title={d.ch_title} url={d.ch_url} view={d.ch_view} timetotal={d.ch_timetotal} />
+            ))
+          }
+        </div>
       </div>
       
       <p className="text-xl font-bold text-red-800">{text}</p>

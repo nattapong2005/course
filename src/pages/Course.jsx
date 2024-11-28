@@ -23,12 +23,14 @@ const Course = () => {
     <div className="container mx-auto p-5 ">
     <h1 className="text-3xl font-bold text-white mt-10 mb-3"><i class="fa-solid fa-book"></i> หลักสูตร <span>นักพัฒนาเว็บไซต์</span></h1>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-10">
-    {
-      data.map( (d) =>(
-        <CourseCard id={d.id} picture={d.picture} title={d.title} detail={d.detail} date={d.date} view={d.view} />
-      ) )
-    }
+    <div className="flex justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-10">
+      {
+        data.map( (d) =>(
+          <CourseCard id={d.id} picture={d.picture} title={d.title} detail={d.detail} date={d.date} view={d.view} />
+        ) )
+      }
+    </div>
     </div>
 
     </div>
